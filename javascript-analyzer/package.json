@@ -1,0 +1,23 @@
+{
+  "name": "javascript-analyzer",
+  "version": "1.0.0",
+  "description": "Standalone static, rule-based JavaScript threat analysis module for the Browser Extension for Phishing Detection project.",
+  "type": "module",
+  "main": "./src/js-analyzer/index.js",
+  "exports": {
+    ".": "./src/js-analyzer/index.js"
+  },
+  "scripts": {
+    "start": "node demo.js",
+    "demo": "node demo.js",
+    "test": "node --test tests/js-analyzer.test.js"
+  },
+  "keywords": [
+    "cybersecurity",
+    "phishing-detection",
+    "static-analysis",
+    "javascript-analyzer",
+    "browser-extension"
+  ],
+  "license": "MIT"
+}
