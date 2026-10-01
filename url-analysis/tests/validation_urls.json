@@ -1,0 +1,20 @@
+[
+  {"url": "https://www.google.com", "expected": "Legitimate", "category": "Simple homepage", "report_score": 0},
+  {"url": "https://www.wikipedia.org", "expected": "Legitimate", "category": "Simple homepage", "report_score": 0},
+  {"url": "https://www.amazon.in/dp/B0CHX1W1XY?ref_=ast_sto_dp&th=1", "expected": "Legitimate", "category": "Real deep e-commerce link", "report_score": 0},
+  {"url": "https://www.netbanking.hdfcbank.com/netbanking/entry?_gl=1", "expected": "Legitimate", "category": "Real bank login", "report_score": 23},
+  {"url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=abc123&response_type=code", "expected": "Legitimate", "category": "Real OAuth flow", "report_score": 38},
+  {"url": "https://accounts.google.com/signin/v2/identifier?service=mail&hl=en", "expected": "Legitimate", "category": "Real sign-in page", "report_score": 10},
+  {"url": "https://github.com/pandas-dev/pandas/blob/main/pandas/core/frame.py", "expected": "Legitimate", "category": "Deep code link", "report_score": 0},
+  {"url": "https://www.irctc.co.in/nget/train-search", "expected": "Legitimate", "category": "Indian govt-linked service", "report_score": 0},
+  {"url": "https://en.wikipedia.org/wiki/Phishing#Techniques", "expected": "Legitimate", "category": "URL with fragment", "report_score": 0},
+  {"url": "https://www.bbc.co.uk/news/technology-12345678", "expected": "Legitimate", "category": "Multi-part TLD + path", "report_score": 0},
+  {"url": "http://192.168.43.12/paypal/login/verify.php", "expected": "Phishing", "category": "IP-based credential page", "report_score": 61},
+  {"url": "http://paypal.com.secure-account-verify.tk/signin", "expected": "Phishing", "category": "Brand in subdomain + free TLD", "report_score": 64},
+  {"url": "http://google.com@evil-site.top/login", "expected": "Phishing", "category": "@ redirection trick", "report_score": 63},
+  {"url": "https://xn--pple-43d.com/id/verify-account", "expected": "Phishing", "category": "Punycode homograph (apple)", "report_score": 33},
+  {"url": "http://secure-update-account-billing-confirm.ml/wp/login.php?user=x&token=y&id=z&s=1&r=2", "expected": "Phishing", "category": "Keyword stuffing + free TLD", "report_score": 69},
+  {"url": "https://a1b2c3x9z8q7.xyz/%6c%6f%67%69%6e/%76%65%72%69%66%79", "expected": "Phishing", "category": "Random domain + heavy encoding", "report_score": 22},
+  {"url": "https://mail.account.security.update.verify.attacker-domain.site/login", "expected": "Phishing", "category": "Excessive subdomains", "report_score": 34},
+  {"url": "https://secure-paypal.com/", "expected": "Phishing", "category": "Short lookalike, HTTPS, clean TLD", "report_score": 28}
+]

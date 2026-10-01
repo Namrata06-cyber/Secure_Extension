@@ -1,0 +1,3 @@
+is_phishing,Safe,Suspicious,Dangerous
+legitimate,49,1,0
+phishing,15,22,13

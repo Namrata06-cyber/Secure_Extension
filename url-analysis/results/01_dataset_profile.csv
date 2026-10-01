@@ -1,0 +1,14 @@
+attribute,value
+Records,"235,795"
+Columns,55
+Label encoding,"1 = LEGITIMATE (134,850) · 0 = PHISHING (100,945)"
+Class balance,57.2% legitimate / 42.8% phishing
+Missing values,0
+Fully duplicated rows,0
+Duplicated URL strings,"425 (235,370 unique of 235,795)"
+Malformed URLs (no http:// or https://),0
+Distinct registered domains,"170,448"
+URLSimilarityIndex on legitimate rows (min / max),100.0 / 100.0
+Accuracy of the single rule 'URLSimilarityIndex >= 100 -> legitimate',99.67%
+Rows that start http:// but have IsHTTPS = 1,493
+Bare-IP hostnames (phishing / legitimate),608 / 0
