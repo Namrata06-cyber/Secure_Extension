@@ -1,0 +1,19 @@
+url,category,expected,score,rule_class,rule,indicators,ml_p_phish,ml
+https://www.google.com,Simple homepage,Legitimate,0,Safe,PASS,(none),0.004,PASS
+https://www.wikipedia.org,Simple homepage,Legitimate,0,Safe,PASS,(none),0.0,PASS
+https://www.amazon.in/dp/B0CHX1W1XY?ref_=ast_sto_dp&th=1,Real deep e-commerce link,Legitimate,0,Safe,PASS,(none),1.0,FAIL
+https://www.netbanking.hdfcbank.com/netbanking/entry?_gl=1,Real bank login,Legitimate,23,Dangerous,FAIL,"R09b, R10",1.0,FAIL
+https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=abc123&response_type=code,Real OAuth flow,Legitimate,38,Dangerous,FAIL,"R08, R09a, R10",0.99,FAIL
+https://accounts.google.com/signin/v2/identifier?service=mail&hl=en,Real sign-in page,Legitimate,10,Suspicious,FAIL,R09a,1.0,FAIL
+https://github.com/pandas-dev/pandas/blob/main/pandas/core/frame.py,Deep code link,Legitimate,0,Safe,PASS,(none),1.0,FAIL
+https://www.irctc.co.in/nget/train-search,Indian govt-linked service,Legitimate,0,Safe,PASS,(none),1.0,FAIL
+https://en.wikipedia.org/wiki/Phishing#Techniques,URL with fragment,Legitimate,0,Safe,PASS,(none),1.0,FAIL
+https://www.bbc.co.uk/news/technology-12345678,Multi-part TLD + path,Legitimate,0,Safe,PASS,(none),1.0,FAIL
+http://192.168.43.12/paypal/login/verify.php,IP-based credential page,Phishing,61,Dangerous,PASS,"R01, R09a, R10, R12",1.0,PASS
+http://paypal.com.secure-account-verify.tk/signin,Brand in subdomain + free TLD,Phishing,64,Dangerous,PASS,"R02, R09a, R10, R12, R14",1.0,PASS
+http://google.com@evil-site.top/login,@ redirection trick,Phishing,63,Dangerous,PASS,"R03, R06, R09b, R10, R12",1.0,PASS
+https://xn--pple-43d.com/id/verify-account,Punycode homograph (apple),Phishing,33,Dangerous,PASS,"R07, R09a, R13",1.0,PASS
+http://secure-update-account-billing-confirm.ml/wp/login.php?user=x&token=y&id=z&s=1&r=2,Keyword stuffing + free TLD,Phishing,69,Dangerous,PASS,"R02, R08, R09a, R12, R13, R14, R17",1.0,PASS
+https://a1b2c3x9z8q7.xyz/%6c%6f%67%69%6e/%76%65%72%69%66%79,Random domain + heavy encoding,Phishing,22,Dangerous,PASS,"R03, R11",1.0,PASS
+https://mail.account.security.update.verify.attacker-domain.site/login,Excessive subdomains,Phishing,34,Dangerous,PASS,"R03, R05, R09a",1.0,PASS
+https://secure-paypal.com/,"Short lookalike, HTTPS, clean TLD",Phishing,28,Dangerous,PASS,"R09a, R10",0.99,PASS

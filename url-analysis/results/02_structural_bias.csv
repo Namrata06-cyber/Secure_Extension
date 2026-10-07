@@ -1,0 +1,7 @@
+,,class,has real path,no path,% has real path,has query string,no query,% has query string,plain HTTP,HTTPS,% plain HTTP
+path,0,"Phishing (100,945)",27451.0,73494.0,27.19,,,,,,
+path,1,"Legitimate (134,850)",0.0,134850.0,0.0,,,,,,
+query,0,"Phishing (100,945)",,,,6079.0,94866.0,6.02,,,
+query,1,"Legitimate (134,850)",,,,0.0,134850.0,0.0,,,
+scheme,0,"Phishing (100,945)",,,,,,,51749.0,49196.0,51.26
+scheme,1,"Legitimate (134,850)",,,,,,,0.0,134850.0,0.0

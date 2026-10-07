@@ -1,0 +1,19 @@
+rule,condition,weight,fired,phishing,legitimate
+R01,has_ip == 1,25,1,1,0
+R02,suspicious_tld_tier == 1,20,3,3,0
+R03,suspicious_tld_tier == 2,12,5,5,0
+R04,trusted_tld == 1,-20,0,0,0
+R05,num_subdomains >= 3,12,4,3,1
+R06,has_at_symbol == 1,20,2,2,0
+R07,is_punycode == 1,15,0,0,0
+R08,url_length > 75,10,4,4,0
+R09a,suspicious_keyword_count >= 2,10,0,0,0
+R09b,suspicious_keyword_count == 1,5,2,1,1
+R10,brand_impersonation == 1,18,1,1,0
+R11,num_percent_encodings >= 3,10,1,1,0
+R12,is_https == 0,8,26,26,0
+R13,num_hyphens_domain >= 3,8,5,5,0
+R14,domain_entropy > 3.6,8,1,1,0
+R15,has_port == 1,6,0,0,0
+R16,double_slash_in_path == 1,8,0,0,0
+R17,num_query_params >= 5,5,0,0,0

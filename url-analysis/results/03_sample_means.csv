@@ -1,0 +1,15 @@
+,legitimate,phishing,difference
+url_length,26.54,39.46,12.92
+domain_length,18.54,23.56,5.02
+path_length,0.0,5.56,5.56
+query_length,0.0,2.8,2.8
+num_subdomains,1.06,1.2,0.14
+num_dots,2.14,2.3,0.16
+num_hyphens_domain,0.02,0.6,0.58
+num_digits,0.06,4.56,4.5
+digit_ratio,0.003,0.095,0.092
+num_special_chars,0.0,0.12,0.12
+special_char_ratio,0.0,0.001,0.001
+domain_entropy,2.728,2.531,-0.197
+suspicious_keyword_count,0.02,0.02,0.0
+num_path_segments,0.0,0.34,0.34
